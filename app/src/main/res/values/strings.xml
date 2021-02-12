@@ -2,4 +2,5 @@
     <string name="app_name">DemoTest</string>
     <string name="title"><u>Title</u></string>
     <string name="body"><u>Body</u></string>
+    <string name="id"><u>ID</u></string>
 </resources>

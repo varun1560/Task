@@ -22,7 +22,7 @@
             android:layout_gravity="center">
 
             <TextView
-                android:id="@+id/tv_title_main"
+                android:id="@+id/tv_id_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -31,12 +31,45 @@
                 android:fontFamily="@font/trebucbd_bold"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="@string/title"
+                android:text="@string/id"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/trebuchet_ms_normal"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_id_main" />
+
+            <TextView
+                android:id="@+id/tv_title_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/trebucbd_bold"
+                android:gravity="center"
+                android:padding="18dp"
+                android:text="@string/title"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_id" />
 
             <TextView
                 android:id="@+id/tv_title"

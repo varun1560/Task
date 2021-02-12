@@ -20,6 +20,7 @@ class CardAdapter(val context: Context, val apiResponse: List<ApiResponse>, val 
     }
 
     override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
+        holder.tv_id.setText(apiResponse.get(position).id)
         holder.tv_title.setText(apiResponse.get(position).title)
         holder.tv_body.setText(apiResponse.get(position).body)
     }
@@ -29,10 +30,12 @@ class CardAdapter(val context: Context, val apiResponse: List<ApiResponse>, val 
     }
 
     inner class CardViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+         var tv_id: TextView
          var tv_title: TextView
          var tv_body: TextView
          var card_item:CardView
         init {
+            tv_id = view.findViewById(R.id.tv_id)
             tv_title = view.findViewById(R.id.tv_title)
             tv_body = view.findViewById(R.id.tv_body)
             card_item = view.findViewById(R.id.card_item)
